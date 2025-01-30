@@ -43,3 +43,4 @@ To resolve these challenges, I plan to:
 Despite these technical hurdles, I made good progress in setting up the project and implementing navigation. My next goal is to address the Android environment issues and successfully launch the application.  
 
 
+https://youtube.com/shorts/tOLx1p_3qs0 
