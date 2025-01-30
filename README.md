@@ -1,29 +1,45 @@
 # Project2
-ST10456532
-Bukho Bawuti 
-
-I was requested to design my own version of the famous Tamagotchi App for Android.This App is going to allow users to have an online pet that they have to care of.
-
-I started by creating the welcoming Interface. I had to go on google and download a picture of a dog , not just any dog though , the dog had to look friendly to ensure that it doesnt it scare any users to the point where they dont want to continue using the app.
-So i picked a brown furry dog, it didnt look intimidating at all . Another reason for picking a dog as my background for the Tamagotchi App is because the main objective of the app is to take care of an online pet.
-https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=Bg2K7j7J This is my pet.![image]
-My welcoming page consists of a picture of my Pet, in the normal white background  with the name of the App in big font sizes. I added a button called Woof That is going to take the User from the Welcoming Page to the Second Page where taking care of the pet begins. 
-
-The Second Page consists of three signficant sections of taking care of a pet in normal everyday life , hunger, Cleanliness and Happiness. So i created buttons that will satisfy all three of the significant sections of taking care of a pet.
- The first one is Hunger,  when your pet is hungry you have give it food and this were the button comes in  i named the button Feed so that none of my users will have to go through any complicated process just click feed and a image of the pet eating will be shown.
- This will decrease the levels of hunger your dog will be experiencing 
- ![image]
- (https://github.com/ST10456532/Project2/assets/162304278/dfd4093d-3ffc-49c9-8133-6b1f86656d68)
-
- The second one is Cleanliness, Your pet has to be clean because how you take care of your pet is a reflection of who you are as person . You cannot bath everyday and think you a clean person too and you dont wash your pet. So washing your pet is of high importance . 
- Cleanliness is going to  show how clean your pet is if it is too low then you have to click the button Clean this will show you an image of the dog being cleaned thus increase its levels of Cleanliness.![image]
- (https://github.com/ST10456532/Project2/assets/162304278/b78f0e94-9d5f-4cfa-8f10-9a928305ce80)
- 
-The Third one is Happiness keeping your dog happy increases its bond with you and in turn increases your bond with it so when your dogs happiness levels are decreasing the only way to keep your dog is to play with it . This is why i added the button  Play  so when you 
-click the button the play it will show you an image of the Dog happy this means that its levels of happiness are gonna increase.
+ST10441904
+Ratshilingana Mpho
 
 
-(https://github.com/ST10456532/Project2/assets/162304278/7b6374fa-05d9-4d3b-8d76-111da034f2d6)
+I started my journey by creating a new React Native project called *MastPOE* using the command:  
+`npx react-native init MastPOE`  
+
+During the setup, I received a warning that the `init` command was deprecated and was advised to use:  
+`npx @react-native-community/cli init`  
+
+After the project was initialized, I encountered issues while attempting to run it on Android with:  
+`npx react-native run-android`  
+
+The process failed, indicating that the Android project structure was missing. This required me to reinitialize the project correctly. Once resolved, I began setting up navigation by installing the necessary packages:  
+
+- Core Navigation: `npm install @react-navigation/native`  
+- Stack Navigation: `npm install @react-navigation/stack`  
+- Additional Dependencies:  
+  ```
+  npm install react-native-gesture-handler react-native-reanimated 
+  react-native-screens react-native-safe-area-context @react-native-community/masked-view
+  ```  
+
+After installing these packages, I created a basic navigation structure in the `App.tsx` file. I implemented a stack navigator that included screens like *Home*, *Courses*, *Starters*, *Main*, *Dessert*, *Available Now*, and *Chef Description*. The navigator was wrapped in a `NavigationContainer`, and the initial route was set.  
+
+Challenges Encountered  
+
+1. Port Conflict: Port 8081 was in use, requiring me to switch to port 8082.  
+2. ADB Issues: The Android Debug Bridge (ADB) was not recognized on my system, likely due to an Android SDK misconfiguration.  
+3. Emulator Setup: No Android emulators were detected, possibly due to a lack of virtual devices or incorrect setup.  
+4. Build Errors: The build process failed due to missing plugins and access issues in the `settings.gradle` file.  
+5. Deprecated Packages: Running `npm install` completed successfully but highlighted warnings about outdated packages.  
+
+Solutions and Next Steps  
+
+To resolve these challenges, I plan to:  
+
+- Verify the emulator configuration and ensure ADB is properly set up.  
+- Investigate and fix errors in the `settings.gradle` file.  
+- Use `GestureHandlerRootView` to wrap the app for better gesture handling.  
+
+Despite these technical hurdles, I made good progress in setting up the project and implementing navigation. My next goal is to address the Android environment issues and successfully launch the application.  
 
 
-https://youtu.be/vAM26EnHFBU
